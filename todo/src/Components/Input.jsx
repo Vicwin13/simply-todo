@@ -9,10 +9,10 @@ export default function Input() {
     }
 
   return (
- <form>
-    <label> Todo Title: </label>
+ <form className='form'>
+    <label> Todo Title: </label> <br/>
     <input type="text" value={input} onChange={handleChange} />
-          {/* <p>value: {input}</p> */}
+          <p>value: {input}</p>
  </form>
 
   )

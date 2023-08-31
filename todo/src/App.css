@@ -1,6 +1,6 @@
 .App{
   
-  width: 47em;
+  width: 46em;
   margin: 0 auto;
 }
 .contain{
@@ -19,4 +19,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.form input{
+  border: 2px solid red;
+  border-radius: 2px;
+  height: 2em;
+  font-size: larger;
+  width: 16em;
+  text-align: center;
+  margin: 0 auto;
 }
