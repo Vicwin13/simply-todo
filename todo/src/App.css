@@ -1,0 +1,22 @@
+.App{
+  
+  width: 47em;
+  margin: 0 auto;
+}
+.contain{
+  max-width: 46em;
+  background-color: rgb(250, 251, 200);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header{
+  color: black;
+
+}
+
+.Head{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
