@@ -12,7 +12,7 @@ export default function Input() {
  <form className='form'>
     <label> Todo Title: </label> <br/>
     <input type="text" value={input} onChange={handleChange} />
-          <p>value: {input}</p>
+          {/* <p>value: {input}</p> */}
  </form>
 
   )

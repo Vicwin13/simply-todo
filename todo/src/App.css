@@ -22,11 +22,11 @@
 }
 
 .form input{
-  border: 2px solid red;
-  border-radius: 2px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
   height: 2em;
   font-size: larger;
   width: 16em;
-  text-align: center;
   margin: 0 auto;
 }
