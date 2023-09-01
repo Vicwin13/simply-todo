@@ -1,6 +1,8 @@
-import {useState} from 'react'
+import { useState } from 'react'
+import Submit from "./Submit"
 
-export default function Description() {
+
+export default function Description( prop ) {
 
     const [describe, setDescribe] = useState('');
 
@@ -8,12 +10,18 @@ export default function Description() {
         setDescribe (e.target.value)
     }
 
-  return (
- <form className='form'>
-    <label> Description: </label> <br/>
-          <textarea rows="6" cols="50" value={describe} onChange={handleChange}>
-          </textarea>
- </form>
+  const answer2 = {describe}
 
+  return (
+    <div>
+ <form className='text-form'>
+    <label> Description: </label> <br/>
+          <textarea className="textarea" rows="6" value={describe} onChange={handleChange}>
+      </textarea>
+      <Submit data={prop.answer} data2 ={answer2}  />
+      </form>
+         
+      
+</div>
   )
 }

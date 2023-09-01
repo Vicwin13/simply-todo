@@ -1,6 +1,9 @@
 import {useState} from 'react'
+import Description from './Description';
+
 
 export default function Input() {
+
 
     const [input, setInput] = useState('');
 
@@ -8,12 +11,17 @@ export default function Input() {
         setInput (e.target.value)
     }
 
+  const answer = {input}; 
+
   return (
- <form className='form'>
-    <label> Todo Title: </label> <br/>
-    <input type="text" value={input} onChange={handleChange} />
-          {/* <p>value: {input}</p> */}
- </form>
+  <div>
+    <form className='form'>
+       <label> Todo Title: </label> <br/>
+        <input className="input" type="text" value={input} onChange={handleChange} />
+      
+            <Description UserAnswer={answer} />
+      </form>
+  </div>
 
   )
 }
