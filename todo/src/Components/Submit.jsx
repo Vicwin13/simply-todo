@@ -1,13 +1,22 @@
-import { useState } from "react"
-
-const [display, setDisplay] = useState(null);
-
+import { useContext, useState } from "react"
+import DataContext from "./DataContext"
 
 
-export default function Submit({data, data2}) {
+export default function Submit() {
+
+const {answer2, prop} = useContext(DataContext)
+
+  const [display, setDisplay] = useState('');
+  
+  display;
+  
+  const change = () => {
+    setDisplay( answer2, prop)
+  }
+  
   return (
     <div>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" onClick={change}/>
       
 
     </div>

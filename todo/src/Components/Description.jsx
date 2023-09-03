@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Submit from "./Submit"
+import DataContext from './DataContext';
 
 
 export default function Description( prop ) {
@@ -10,15 +11,22 @@ export default function Description( prop ) {
         setDescribe (e.target.value)
     }
 
-  const answer2 = {describe}
+  const answer2 = { describe }
+
+  const contextValue = {
+    answer2,
+    prop,
+  }
 
   return (
     <div>
  <form className='text-form'>
     <label> Description: </label> <br/>
           <textarea className="textarea" rows="6" value={describe} onChange={handleChange}>
-      </textarea>
-      <Submit data={prop.answer} data2 ={answer2}  />
+        </textarea>
+        <DataContext.Provider value={contextValue}>
+          <Submit />
+          </DataContext.Provider>
       </form>
          
       

@@ -43,3 +43,8 @@
   display:flex;
 
 }
+
+.display{
+  border: 3px solid gold;
+  height: 50vh;
+}

@@ -19,7 +19,7 @@ export default function Input() {
        <label> Todo Title: </label> <br/>
         <input className="input" type="text" value={input} onChange={handleChange} />
       
-            <Description UserAnswer={answer} />
+            <Description answer={answer} />
       </form>
   </div>
 
