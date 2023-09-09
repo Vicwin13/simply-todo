@@ -1,21 +1,14 @@
-import Contain from './Components/Contain'
-import './App.css'
-import ContainerTwo from './Components/ContainerTwo'
-import ContainerThree from './Components/ContainerThree'
-import ContainerFour from './Components/ContainerFour'
+import Contain from "./Components/Contain";
+import "./App.css";
+import ContainerTwo from "./Components/ContainerTwo";
 
 function App() {
   return (
-      <div className='App'>
+    <div className="App">
       <Contain />
       <ContainerTwo />
-      <ContainerThree />
-      <ContainerFour/>
     </div>
-  )
+  );
 }
 
-export default App
-
-
-
+export default App;

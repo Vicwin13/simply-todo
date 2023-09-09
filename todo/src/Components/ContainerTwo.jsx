@@ -1,4 +1,5 @@
-import Input from "./Input";
+import DataContext from "./DataContext";
+
 
 
 
@@ -7,8 +8,7 @@ import Input from "./Input";
 export default function ContainerTwo() {
   return (
       <div>
-          <Input />
-          
+          <DataContext/>    
     </div>
   )
 }

@@ -21,6 +21,11 @@
   justify-content: space-around;
 }
 
+.form{
+  border: 2px solid red;
+  margin: 1rem auto;
+}
+
 .form .input{
   border: none;
   outline: none;
@@ -28,6 +33,13 @@
   height: 2em;
   font-size: larger;
   width: 16em;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 20em;
   
 }
 
@@ -41,10 +53,28 @@
 
 .threeButtons{
   display:flex;
+  justify-content: center;
 
 }
 
-.display{
-  border: 3px solid gold;
-  height: 50vh;
+.threeButtons button{
+  width: 10em;
+  padding: .2rem .5rem;
+}
+
+
+.display .displayContainer{
+  padding: 1em;
+  color: black;
+  background-color: aliceblue;
+  width: 20rem;
+  margin: 1rem auto;
+
+}
+
+.submitButton{
+  margin-top: 10px;
+  width: fit-content;
+  padding: 5px;
+  border: none;
 }
